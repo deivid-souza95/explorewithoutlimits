@@ -1,0 +1,301 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+
+:root {
+  font-size: 62.5%;
+  
+
+  --color-titles: #B52184;
+  --color-paragraphs: #312D64;
+  --color-background-mainandfooter: linear-gradient(153deg, rgba(96,51,242,0.4766281512605042) 0%, rgba(52,49,147,0.8379726890756303) 14%, rgba(6,4,52,0.835171568627451) 53%);
+  --color-background-mainandbooter-hover: linear-gradient(153deg, rgba(137,124,176,0.4766281512605042) 0%, rgba(129,128,147,0.8379726890756303) 14%, rgba(47,43,136,0.835171568627451) 53%);
+}
+
+body, input, textarea, h1, p, .button-aside, .rodape {
+  font-family: 'Mulish', sans-serif;
+}
+
+.page {
+  width: 43.0rem;
+  margin: auto;
+}
+
+header {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+header .logotop {
+  width: 36.4rem;
+  height: 37.0rem;
+
+  margin: 0 3.2rem;
+}
+
+header h1 {
+  font-size: 3.2rem;
+  font-weight: 900;
+  line-height: 4.0rem;
+  text-align: center;
+
+  margin-top: 1.7rem;
+
+  color: var(--color-titles);
+}
+
+header p {
+  font-size: 2.0rem;
+  font-weight: 600;
+  line-height: 2.5rem;
+  text-align: center;
+
+  color: var(--color-paragraphs);
+}
+
+header .rolldown {
+  width: 5.8rem;
+  height: 10.5rem;
+  background-color: #FFFFFF;
+  border: none;
+
+  margin: 3.5rem 18.6rem;
+
+  background-repeat: no-repeat;
+  background-image: url("data:image/svg+xml,%3Csvg width='59' height='105' viewBox='0 0 59 105' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='2' y='2' width='54.587' height='101' rx='27.2935' stroke='%23B52184' stroke-width='4'/%3E%3Cpath d='M28.8383 30.0042C28.5642 30.0387 28.3621 30.2768 28.3728 30.5528V74.0352L14.8981 62.0558C14.7957 61.9568 14.6582 61.903 14.5157 61.906C14.2928 61.913 14.0978 62.0581 14.0273 62.2695C13.9568 62.4809 14.0258 62.7141 14.2001 62.8532L28.5559 75.614C28.7562 75.7883 29.0537 75.7883 29.2539 75.614L43.6098 62.8532C43.7296 62.7649 43.8071 62.6307 43.823 62.4827C43.839 62.3347 43.7926 62.1867 43.6947 62.0747C43.5968 61.9631 43.4562 61.8971 43.3075 61.8934C43.1588 61.8897 43.0152 61.9486 42.9118 62.0558L29.437 74.0351V30.5528C29.443 30.3966 29.3799 30.2457 29.2649 30.14C29.1496 30.0343 28.9938 29.9846 28.8388 30.0042L28.8383 30.0042Z' fill='%23B52184' stroke='%23B52184' stroke-width='2.61398'/%3E%3C/svg%3E");
+}
+
+/*  abaixo começou o corpo do site */
+
+main {
+  height: 125.0rem;
+
+  padding: 5.2rem 3.8rem;
+
+  background: var(--color-background-mainandfooter);
+}
+
+main .item {
+  width: 35.2rem;
+  height: 35rem;
+
+  padding: 2.5rem;
+  border-radius: 1.9rem;
+  
+  background-color: #FFFFFF;
+
+  margin-bottom: 5.0rem;
+}
+
+main .gallery .moon {
+  width: 8.0rem;
+  height: 8.0rem;
+}
+
+main .gallery h1 {
+  font-size: 2.9rem;
+  font-weight: 900;
+  line-height: 3.7rem;
+
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+
+  color: var(--color-titles);
+}
+
+main .gallery p {
+  width: 26rem;
+  height: 1.3rem;
+
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 2.0rem;
+
+  color: var(--color-paragraphs);
+}
+
+.subpage h1 {
+  font-size: 3.2rem;
+  font-weight: 900;
+  line-height: 4.0rem;
+
+  margin-top: 7.8rem;
+  margin-bottom: 4.3rem;
+  color: var(--color-titles);
+}
+
+aside {
+  padding: 0 4.0rem;
+}
+
+.input-wrapper {
+  margin-bottom: 2.4rem;
+}
+
+.input-wrapper .name input {
+  background-position: 10px center;
+  background-image: url(./assets/person.png);
+  background-repeat: no-repeat;
+}
+
+.input-wrapper .person input {
+  background-position: 10px center;
+  background-image: url(./assets/aroub.png);
+  background-repeat: no-repeat;
+}
+
+.input-wrapper input {
+  width: 34.0rem;
+  height: 4.8rem;
+  
+  padding: 0 4.0rem;
+
+  border-radius: 1.6rem;
+
+  border: 1.5px solid #312D64
+}
+
+.input-wrapper textarea {
+  width: 34.0rem;
+
+  padding: 1.5rem;
+
+  border-radius: 1.6rem;
+
+  border: 1.5px solid #312D64
+}
+
+aside .button-aside {
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 2.4rem;
+
+  color: #FFFFFF;
+
+  padding: 1.6rem;
+  
+  border: none;
+  border-radius: 1.6rem;
+  background: var(--color-background-mainandfooter);
+}
+
+aside .button-aside:hover {
+  background: var(--color-background-mainandbooter-hover);
+}
+
+footer .rodape  {
+  font-size: 1.9rem;
+
+  text-align: center;
+  padding: 3.0rem;
+  color: #FFFFFF;
+}
+
+footer .rodape {
+  width: 43.0rem;
+  height: 7.8rem;
+
+  background: var(--color-background-mainandfooter);
+}
+
+@media (min-width: 1020px){
+  .page {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    width: 144.0rem;
+    min-height: 0;
+  }
+
+  header {
+    display: flex;
+    flex-direction: row;
+    height: 83.6rem;
+
+    padding: 0 8rem;
+    width: 144.0rem;
+  }
+
+  header .logotop {
+    width: 78.0rem;
+    height: 73.2rem;
+    margin-right:3.8rem;
+  }
+
+  header h1 {
+    margin-top: 31.2rem ;
+    width: 55.4rem;
+  }
+
+  header p {
+    margin-top: .8rem;
+    margin-bottom: 17.9rem;
+  }
+
+  header .rolldown {
+    margin: 0 11.0rem;
+  }
+
+  main {
+    max-height: 57.6rem;
+    width: 144.0rem;
+  }
+
+  main .gallery {
+    padding: 1.0rem 11.1rem ;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6.0rem;
+  }
+
+  main .item .moon {
+    margin-bottom: 4.0rem;
+  }
+
+  main .item {
+    max-width: 32.0rem;
+    height: 44.0rem;
+  }
+
+  main .item p {
+    max-width: 32.1rem;
+    height: 20.8rem;
+  }
+
+  .subpage {
+    width: 100vh;
+    padding: 0 10.9rem;
+  }
+
+  .input-wrapper input {
+    width: 59.2rem;
+  }
+
+  .input-wrapper textarea {
+    width: 59.2rem;
+    resize: none;
+  }
+
+  aside {
+    background-image: url(./assets/background-down.png);
+    background-repeat: repeat-y;
+    background-position: right;
+
+    padding-bottom: 9.4rem;
+  }
+
+  footer .rodape {
+    width: 144.0rem;
+  }
+
+}
